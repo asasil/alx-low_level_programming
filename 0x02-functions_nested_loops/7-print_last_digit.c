@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print _last_digit - function that prints last digit
+ * print_last_digit - function that prints last digit
  *
  * @i: function para
  *
