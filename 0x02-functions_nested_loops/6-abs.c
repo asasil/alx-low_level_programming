@@ -4,7 +4,7 @@
  * Return: -n or n
  * @int: integer
  */
-int _abs(int)
+int _abs(int n)
 {
 	if (n < 0)
 	{
