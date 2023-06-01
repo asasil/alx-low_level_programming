@@ -7,17 +7,14 @@
  */
 void reverse_array(int *a, int n)
 {
-	int r = 0;
-	int tmp = a[r];
+	int s;
+	int t;
 
-	while (r < n)
+	for (s = 0; s < n--; s++)
 	{
-		if (r != 0)
-		{
-			_putchar(',');
-		}
-		_putchar(tmp + '0');
-		r++;
+		t = a[s];
+		a[s] = a[n];
+		a[n] = t;
 	}
-	_putchar('\n');
 }
+
