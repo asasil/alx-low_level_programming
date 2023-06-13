@@ -6,22 +6,24 @@
  * @str: char
  * Return: 0
  */
-
 char *_strdup(char *str)
 {
+	char *duplicate;
+	int length = 0, i = 0;
+
 	if (str == NULL)
-	{
 		return (NULL);
-	}
-	size_t length = strlen(str);
-	char *duplicate = (char *)malloc((length + 1) * sizeof(char));
+
+	while (str[length] != '\0')
+		length++;
+
+	duplicate = malloc(sizeof(char) * (length + 1));
 
 	if (duplicate == NULL)
-	{
 		return (NULL);
-	}
-	strcpy(duplicate, str);
+
+	for (i = 0; i <= length; i++)
+		duplicate[i] = str[i];
 
 	return (duplicate);
 }
-
